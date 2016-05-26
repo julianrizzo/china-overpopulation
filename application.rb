@@ -20,6 +20,12 @@ class App < Sinatra::Base
 	set :public_folder, File.dirname(__FILE__) + '/public/'
 	set :assets_prefix, %w(app/assets vendor/assets)
 
+	# CSS minification
+	set :assets_css_compressor, :sass
+
+	# JavaScript minification
+	set :assets_js_compressor, :uglifier
+
 	register Sinatra::AssetPipeline
 	
 	configure :development do
