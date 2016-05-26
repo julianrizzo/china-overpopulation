@@ -20,8 +20,7 @@ class App < Sinatra::Base
 	set :public_folder, File.dirname(__FILE__) + '/public/'
 	set :assets_prefix, %w(app/assets vendor/assets)
 
-	# CSS minification
-	set :assets_css_compressor, :sass
+	set :assets_precompile, %w(app.js app.css *.png *.jpg *.svg *.eot *.ttf *.woff)
 
 	register Sinatra::AssetPipeline
 	
