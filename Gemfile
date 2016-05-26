@@ -17,9 +17,3 @@ gem 'sinatra-contrib', '1.4.7'
 gem 'sass', '3.4.22'
 
 gem 'slim', '3.0.6'
-
-gem 'sinatra-activerecord', '2.0.9'
-
-group :development, :test do
-	gem 'sqlite3', '1.3.11'
-end
