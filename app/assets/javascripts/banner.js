@@ -9,7 +9,7 @@ function makePopulationGrow() {
     var timer = setInterval(function() {
 
         var $person = $("<i class='person fa'></i>");
-
+        
         var randX = getRandomInt(0,maxWidth);
         var randY = getRandomInt(0,maxHeight);
 
